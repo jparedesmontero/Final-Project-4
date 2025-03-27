@@ -99,3 +99,6 @@ SRR31658253
 SRR31658254
 SRR31658256
 SRR31658257
+
+#Accession Numbers for Becta-lactamases
+bla(TEM): NG_050145               
