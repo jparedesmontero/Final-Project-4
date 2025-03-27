@@ -1,4 +1,4 @@
-SRA Numbers - 100 sample size
+
 SRR25590905
 SRR25590906
 SRR25590907
