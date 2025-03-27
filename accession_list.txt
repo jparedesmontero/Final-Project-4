@@ -1,4 +1,4 @@
-#Accession List for Pseudomonas aeruginosa
+# Accession List for Pseudomonas aeruginosa
 SRR25590905
 SRR25590906
 SRR25590907
