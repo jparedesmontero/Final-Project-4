@@ -15,6 +15,7 @@ Below is a table of sequencing run accession numbers from the NCBI Sequence Read
 | S5        | *Pseudomonas aeruginosa* E | Yes                     | SRR1234571           |
 | S6        | *Pseudomonas aeruginosa* F | No                      | SRR1234572           |
 
+
 ## Notes
 -Data retrieved from NCBI SRA database.
 - Sample IDs correspond to sequencing runs from different strains.
