@@ -1,3 +1,4 @@
+
 # Final-Project
 Problem Statement
 # Biological Question
@@ -19,8 +20,9 @@ accession list created
 #BLAST https://blast.ncbi.nlm.nih.gov/Blast.cgi 
     A widely used tool for sequence alignment. Use the blastn or blastx command to align your reads to a reference database.
     
-#ResFinder Database: A specialized database for antibiotic resistance genes.
+#ResFinder Database: A specialized database for antibiotic resistance genes.http://genepi.food.dtu.dk/resfinder
     
 #CARD https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://card.mcmaster.ca/&ved=2ahUKEwiNr5LW-6qMAxWXk4kEHam0HgkQFnoECAkQAQ&usg=AOvVaw3ZCtqK2lNkJ0JlhWV_bZFc
 
 SLURM
+SRA-TOOLKIT
