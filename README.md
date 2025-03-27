@@ -1,5 +1,5 @@
 
-# Final-Project
+# Investigating Antibiotic Resistance Genes in Healthcare-Associated Infections through Sequence Alignment 
 Problem Statement
 # Biological Question
 Does Pseudomonas aeruginosa contain genes associated with antibiotic resistance, particularly beta-lactamases?
