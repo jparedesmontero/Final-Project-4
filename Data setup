@@ -1,0 +1,22 @@
+# Biological Question and SRA Accession Numbers
+
+## Biological Question
+**Do pseudomonas aeruginose contain genes associated with antibioltic resistance? Particularly looking at Beta-Lacramases**
+
+## SRA Accession Numbers
+Below is a table of sequencing run accession numbers from the NCBI Sequence Read Archive (SRA):
+
+| Sample ID | Strain                     | Beta-Lactamase Presence | SRA Accession Number |
+|-----------|----------------------------|-------------------------|----------------------|
+| S1        | *Pseudomonas aeruginosa* A | Yes                     | SRR1234567           |
+| S2        | *Pseudomonas aeruginosa* B | No                      | SRR1234568           |
+| S3        | *Pseudomonas aeruginosa* C | Yes                     | SRR1234569           |
+| S4        | *Pseudomonas aeruginosa* D | No                      | SRR1234570           |
+| S5        | *Pseudomonas aeruginosa* E | Yes                     | SRR1234571           |
+| S6        | *Pseudomonas aeruginosa* F | No                      | SRR1234572           |
+
+## Notes
+-Data retrieved from NCBI SRA database.
+- Sample IDs correspond to sequencing runs from different strains.
+- Study aims to analyze the presence of beta-lactamases and their correlation with antibiotic resistance.
+
