@@ -25,4 +25,7 @@ accession list created
 #CARD https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://card.mcmaster.ca/&ved=2ahUKEwiNr5LW-6qMAxWXk4kEHam0HgkQFnoECAkQAQ&usg=AOvVaw3ZCtqK2lNkJ0JlhWV_bZFc
 
 SLURM
+
 SRA-TOOLKIT
+
+****Need to download the SRA files onto the HBC yet. 
