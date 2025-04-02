@@ -1,4 +1,4 @@
-## Biological Question and SRA Accession Numbers
+# Biological Question and SRA Accession Numbers
 
 ## Biological Question
 **Do pseudomonas aeruginose (commonly found in hospital aquired infections) contain genes associated with antibioltic resistance? Particularly looking at Beta-Lacramases**
