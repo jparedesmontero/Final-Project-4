@@ -279,3 +279,77 @@ ggplot(df, aes(x = Position, y = Frequency)) +
   ) +
   theme_minimal()
 ```
+# Finally, create PCA graph
+
+```
+bcftools merge vcfs/*.vcf -Ov -o merged.vcf
+```
+- Push merged.vcf and import into RStudio
+- Run this R script
+```
+# ----------------------------
+# Load or install dependencies
+# ----------------------------
+
+packages <- c("vcfR", "adegenet", "ggplot2")
+new_packages <- packages[!(packages %in% installed.packages()[, "Package"])]
+
+if(length(new_packages)) {
+  install.packages(new_packages, repos = "https://cloud.r-project.org")
+}
+
+# ----------------------------
+# Load libraries
+# ----------------------------
+
+library(vcfR)
+library(adegenet)
+library(ggplot2)
+
+# ----------------------------
+# Read the merged VCF
+# ----------------------------
+
+vcf <- read.vcfR("merged.vcf")
+
+# ----------------------------
+# Extract genotype matrix (0, 1, 2)
+# ----------------------------
+
+genotypes <- extract.gt(vcf, element = "GT", as.numeric = TRUE)
+genotypes[is.na(genotypes)] <- 0  # Replace missing values with 0
+
+# Transpose so rows = samples, cols = SNPs
+geno_matrix <- t(genotypes)
+
+# ----------------------------
+# PCA on genotype matrix
+# ----------------------------
+
+pca <- prcomp(geno_matrix, center = TRUE, scale. = TRUE)
+
+# ----------------------------
+# Prepare data for plotting
+# ----------------------------
+
+pca_df <- as.data.frame(pca$x)
+pca_df$Sample <- rownames(pca_df)
+
+# ----------------------------
+# Plot PCA
+# ----------------------------
+
+ggplot(pca_df, aes(x = PC1, y = PC2)) +
+  geom_point(color = "darkred", size = 2) +
+  labs(
+    title = "PCA of Beta-lactamase SNPs Across Isolates",
+    x = paste0("PC1 (", round(summary(pca)$importance[2,1] * 100, 1), "%)"),
+    y = paste0("PC2 (", round(summary(pca)$importance[2,2] * 100, 1), "%)")
+  ) +
+  theme_minimal()
+
+# ----------------------------
+# Save to file (optional)
+# ----------------------------
+ggsave("pca_beta_lactamase.png", width = 8, height = 6, dpi = 300)
+```
