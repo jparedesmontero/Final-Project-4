@@ -286,7 +286,7 @@ bcftools merge vcfs/*.vcf -Ov -o merged.vcf
 ```
 - Push merged.vcf and import into RStudio
 - Run this R script
-```
+```R
 # ----------------------------
 # Load or install dependencies
 # ----------------------------
